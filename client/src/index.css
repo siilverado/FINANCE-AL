@@ -1,0 +1,77 @@
+/* ========================= TAILWIND FUNCIOTS. DO NOT DELETE =============================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ============================= RESET CSS ======================== */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inputFocus:focus + label {
+  transform: translateY(0);
+  font-size: 12px;
+}
+
+.inputWritten {
+  transform: translateY(0);
+  font-size: 12px;
+}
+
+.selectArrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .scrollbarSF::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbarSF::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+
+  .scrollbarSF::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 2px;
+  }
+}
