@@ -1,0 +1,171 @@
+/* ========================= TAILWIND FUNCIOTS. DO NOT DELETE =============================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+/* ============================= RESET CSS ======================== */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inputFocus:focus + label {
+  transform: translateY(0);
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+.inputWritten {
+  transform: translateY(0);
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+.selectArrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .scrollbarSF::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbarSF::-webkit-scrollbar-track {
+    background-color: #000;
+    border-radius: 20px;
+  }
+
+  .scrollbarSF::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 20px;
+  }
+}
+
+.bounce:hover {
+  animation: bounce 0.8s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===================================CALENDAR =========================================== */
+.react-calendar {
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+.react-calendar__navigation button {
+  color: #4caf50;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #fff;
+}
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  color: #4caf50;
+  background: #4caf5011;
+  border-radius: 6px;
+}
+.react-calendar__tile--now {
+  background: #4caf5044;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #4caf50;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #4caf5055;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #4caf50;
+  border-radius: 0;
+}
+
+.hoursScrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.hoursScrollbar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 20px;
+}

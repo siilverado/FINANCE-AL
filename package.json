@@ -1,0 +1,26 @@
+{
+  "name": "c10-g39",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "client:build": "npm run build --workspace=client",
+    "client:dev": "npm run dev --workspace=client && npm run start:dev --workspace=server",
+    "server:dev": "npm run start:dev --workspace=server",
+    "lint:fix": "npm run lint:fix --workspace=client && npm run lint:fix --workspace=server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/babel__core": "^7.20.0",
+    "prettier": "2.8.7"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.18.1"
+  }
+}
